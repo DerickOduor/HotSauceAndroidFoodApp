@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cheeseburger">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Hot Sauce"
+            android:textSize="30sp"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/label"
+            android:layout_marginTop="150dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/signIn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#CDDC39"
+            android:text="Sign In"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:shadowColor="@color/overlayBackground"/>
+
+        <Button
+            android:id="@+id/signUp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="Sign Up"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:shadowColor="@color/overlayBackground"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
